@@ -1,8 +1,17 @@
 *{
+  margin: 0;
+  padding: 0;
+}
+
+#root{
   height: 100%;
 }
 
-.backk{
+.body{
+  height: 100%;
+}
+
+.homePage_background{
   background-image: url(./images/homepage-background.jpg);
   /* Center and scale the image nicely */
   height: 100%;
@@ -12,8 +21,11 @@
 }
 
 
-.navbar{
-  height: 60px;
+.navbar{ 
+  color: black;
+}
+
+.navbarhome{
   color: white;
 }
 
@@ -42,3 +54,12 @@
 
 }
 
+.img {
+  height: auto;
+  max-height: 250px;
+  width: auto;
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
