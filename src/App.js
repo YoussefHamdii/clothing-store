@@ -10,12 +10,8 @@ function App() {
       <div className="body">
           <NavigationBar />
           <Switch>
-            <Route exact path="/">
-            <Home />
-            </Route>
-            <Route path="/Featured">
-              <Featured />
-            </Route>
+            <Route exact path="/" component={()=><Home />} />
+            <Route path="/Featured" component={()=><Featured />} />
           </Switch>
       </div>
     </Router>

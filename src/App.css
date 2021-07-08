@@ -23,10 +23,12 @@
 
 .navbar{ 
   color: black;
+  margin-top: -7px;
 }
 
 .navbarhome{
   color: white;
+  margin-left: 25px;
 }
 
 .brandname{
@@ -60,6 +62,47 @@
   width: auto;
   max-width: 250px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.card__group{
+  display: flex;
+  align-items: stretch;
+  flex-wrap:wrap;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card{
+  width: 320px;
+  margin: 15px;
+}
+
+.footer__body{
+  width: 100%;
+  background-color: #2A2C2D;
+  color: white;
+  padding: 5em;
+}
+
+.footer__nav{
+  text-align: right;
+  list-style: none;
+  margin-right: 10%;
+}
+
+.footer__nav li{
+  display: inline;
+  margin-left: 2em;
+}
+
+.footer__txt1{
+  font-size: 3em;
+}
+
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
