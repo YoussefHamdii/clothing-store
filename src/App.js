@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import NavigationBar from './components/NavigationBar';
 import Home from './components/Home';
 import Featured from './components/Featured';

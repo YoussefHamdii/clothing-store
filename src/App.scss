@@ -11,6 +11,11 @@
   height: 100%;
 }
 
+@font-face {
+  font-family: "edge";
+  src: url(./EdgeOfTheGalaxyItalic-ZVJB3.otf);
+}
+
 .homePage_background{
   background-image: url(./images/homepage-background.jpg);
   /* Center and scale the image nicely */
@@ -18,6 +23,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 
@@ -35,9 +41,7 @@
   font-size: 30px;
 }
 
-.center {
-
-
+.homepage__container{
   position: absolute;
 
 
@@ -48,12 +52,34 @@
 
 
   transform: translate(-50%, -50%);
+  overflow: hidden;
+//   box-shadow: 40px -3px 26px 24px rgba(0,0,0,0.26);
+// -webkit-box-shadow: 40px -3px 26px 24px rgba(0,0,0,0.26);
+// -moz-box-shadow: 40px -3px 26px 24px rgba(0,0,0,0.26);
+  height: 75%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  box-shadow: 40px -3px 26px 24px rgba(0,0,0,0.26);
--webkit-box-shadow: 40px -3px 26px 24px rgba(0,0,0,0.26);
--moz-box-shadow: 40px -3px 26px 24px rgba(0,0,0,0.26);
-  height: 65%;
+  span{
+    color: white;
+    margin: auto ;
+    text-align: center;
+    font-size: 3em;
+    font-family: "edge";
+  }
 
+  .orange{
+    color: orange;
+    font-size: 2em;
+  }
+}
+.center {
+  max-height: 90%;
+  max-width: 90%;
+  margin: auto;
 }
 
 .img {
@@ -62,7 +88,7 @@
   width: auto;
   max-width: 250px;
   display: block;
-  margin: 0 auto;
+  
 }
 
 .card__group{
