@@ -30,11 +30,23 @@
 .navbar{ 
   color: black;
   margin-top: -7px;
+  text-decoration: none;
 }
 
 .navbarhome{
   color: white;
   margin-left: 25px;
+  text-decoration: none;
+}
+
+.active{
+  text-decoration: none;
+}
+
+.cart__icon{
+  color: black;
+  margin-left: 2px;
+  text-decoration: none;
 }
 
 .brandname{
@@ -87,7 +99,7 @@
   max-height: 250px;
   width: auto;
   max-width: 250px;
-  display: block;
+  margin: auto;
   
 }
 

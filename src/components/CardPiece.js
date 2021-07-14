@@ -1,10 +1,18 @@
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {useDispatch} from 'react-redux';
+import * as actions from '../redux/shopping/shoppingActions';
 
 
 
 
 function CardPiece(props) {
+
+  const dispatch = useDispatch();
+
+  function addToCart(item){
+    dispatch(actions.addToCart(item.id));
+  }
 
   return (
        
@@ -16,6 +24,7 @@ function CardPiece(props) {
         Price: {props.prod.price}$
       </Card.Text>
     </Card.Body>
+    <Button variant="dark" onClick={() => addToCart(props.prod)}>Add to cart</Button>
   </Card>
 
     
