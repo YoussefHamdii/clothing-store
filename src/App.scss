@@ -150,3 +150,17 @@ $orange_color: #F54748;
   left: 50%;
 }
 
+.cart__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .cart{
+    width: 750px;
+    border: 1px solid #0F3A56;
+    border-radius: 0px 12px 12px 0px;
+  }
+}
+
+
