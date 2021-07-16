@@ -12,9 +12,9 @@ const shoppingReducer = (state = INITIAL_STATE, {type, payload}) =>{
             const inCart = state.cart.find((item)=> item.id === payload.id? true:false);
             return{...state, cart: inCart? state.cart.map((item) => item.id === payload.id? {...item, qty:item.qty+1}:item) : [...state.cart, {...payload, qty:1}]};
         case actionTypes.REMOVE_FROM_CART:
-            return{}
+            return{...state, cart: state.cart.filter((item) => item.id !== payload.id) };
         case actionTypes.ADJUST_QTY:
-            return{}
+            return{...state, cart: state.cart.map((item) => item.id === payload.id? {...item, qty:payload.qty}:item) };
         case actionTypes.ADD_PRODUCTS:
             return{...state, products: payload};
         default:
