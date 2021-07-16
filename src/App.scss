@@ -157,11 +157,30 @@ $orange_color: #F54748;
   flex-wrap: wrap;
 
   .cart{
-    width: 750px;
+    width: 60%;
   }
+}
+
+.cart__image{
+  max-height: 100px;
+  max-width: 100px;
 }
 
 .quantity{
   margin: 0 5px;
+}
+
+.product__details{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  span{
+    margin: auto;
+  }
+}
+
+.table__text{
+  margin-left: 25%;
+  text-align: center;
 }
 
